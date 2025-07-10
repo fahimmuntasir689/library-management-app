@@ -28,4 +28,16 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 
 - POST `/api/borrow` <br>
 
+## Used Technologies
+
+- nodeJS <br>
+
+- ExpressJS <br>
+
+- TypeScript <br>
+
+- MongoDB <br>
+
+- Mongoose 
+
 
