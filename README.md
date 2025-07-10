@@ -12,20 +12,20 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 # API Details
 ### Books API
 
--GET `/api/books`  <br>
+- GET `/api/books`  <br>
 
--POST `/api/books` <br>
+- POST `/api/books` <br>
 
--GET `/api/books/:bookId`  <br>
+- GET `/api/books/:bookId`  <br>
 
--PATCH `/api/books/:bookId`  <br>
+- PATCH `/api/books/:bookId`  <br>
 
--DELETE `/api/books/:bookId` <br>
+- DELETE `/api/books/:bookId` <br>
 
 ### Borrow API 
 
--GET `/api/borrow` <br>
+- GET `/api/borrow` <br>
 
--POST `/api/borrow` <br>
+- POST `/api/borrow` <br>
 
 
