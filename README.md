@@ -1,5 +1,5 @@
 # # Library-Management-App
-- a Library Management System using Express, TypeScript, and MongoDB (via Mongoose).
+A Library Management System using Express, TypeScript, and MongoDB (via Mongoose).
 
 
 #  Key Features
