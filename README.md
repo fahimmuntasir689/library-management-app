@@ -40,7 +40,7 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 
 - Mongoose 
 
-# SET UP
+## SET UP
 
 - git clone `https://github.com/fahimmuntasir689/library-management-app.git` <br>
 
@@ -62,6 +62,17 @@ npm run build
 - dev
 ```
 npm run dev
+```
+## Explanation Video
+
+```
+https://drive.google.com/file/d/18-gLPiMJcihS0V2P5-WTvkeP42q2j70Y/view?usp=sharing
+```
+
+## Deployment Link
+
+```
+https://library-management-app-sooty-mu.vercel.app/
 ```
 
 
