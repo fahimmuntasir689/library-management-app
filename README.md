@@ -1,4 +1,4 @@
-# # Library-Management-App
+# Library-Management-App
 A Library Management System using Express, TypeScript, and MongoDB (via Mongoose).
 
 
