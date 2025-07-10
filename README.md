@@ -42,16 +42,18 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 
 # SET UP
 
-- git clone `https://github.com/fahimmuntasir689/library-management-app.git`
+- git clone `https://github.com/fahimmuntasir689/library-management-app.git` <br>
+
+- cd library-management-app
 
 - dependencies installation
 
 ```bash
 npm install
 ```
-- env setup
+- environment setup
 ```
-MONGO_URI="your mongodb uri"
+MONGO_URI=your mongodb uri
 ```
 - build
 ```
