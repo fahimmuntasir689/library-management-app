@@ -10,17 +10,17 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 - Custom Error Handling Using Middlewares
 
 # API Details
-Books API =>
+### Books API
 
--GET `/api/books`
--POST `/api/books`
--GET `/api/books/:bookId`
--PATCH `/api/books/:bookId`
--DELETE `/api/books/:bookId`
+-GET `/api/books` ---
+-POST `/api/books` ---
+-GET `/api/books/:bookId` --- 
+-PATCH `/api/books/:bookId` --- 
+-DELETE `/api/books/:bookId` ---
 
-Borrow API =>
+### Borrow API 
 
--GET `/api/borrow`
--POST `/api/borrow`
+-GET `/api/borrow` ---
+-POST `/api/borrow` ---
 
 
