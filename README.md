@@ -44,14 +44,11 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 
 - git clone `https://github.com/fahimmuntasir689/library-management-app.git`
 
+- package installation
 - 
-
 ```bash
-
-# Install dependencies
 npm install
 
-# Start the server
-npm run dev
+
 
 
