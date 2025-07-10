@@ -40,4 +40,7 @@ A Library Management System using Express, TypeScript, and MongoDB (via Mongoose
 
 - Mongoose 
 
+# SET UP
+
+- git clone `
 
