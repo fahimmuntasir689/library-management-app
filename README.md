@@ -3,9 +3,13 @@
 
 
 #  Key Features
-- Books Management (CRUD - CREAT , READ , UPDATE , DELETE )
-- Borrowed Books Management ( CREAT , READ )
+- Books Management (CRUD - CREATE , READ , UPDATE , DELETE )
+- Sorting and Filtering Using Query
+- Borrowed Books Management ( CREATE , READ )
 - Borrowd Books Summary Using Aggregation
 - Custom Error Handling Using Middlewares
-- Sorting and Filtering Using Query
-- 
+
+# API Details
+Books API
+-GET `api/books`
+
