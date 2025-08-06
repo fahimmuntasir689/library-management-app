@@ -6,7 +6,7 @@ import { globalErrorHandler } from './app/Custom-Middlewares/errorHandler';
 
 
 export const app : Application = express();
-app.use(cores({origin : 'http://localhost:5173'}));
+app.use(cores({origin : 'https://bibliotheca-management-system.vercel.app' , credentials: true}));
 
 app.use(express.json());
 
