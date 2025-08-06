@@ -47,7 +47,9 @@ bookRouter.post('/', async (req: Request, res: Response, next: NextFunction) => 
 
     try {
         const body = req.body;
-
+        if (body.copies !== undefined) {
+            body.available = body.copies > 0;
+        }
         const data = await Books.create(body);
         res.status(201).json({
             success: true,
@@ -61,14 +63,15 @@ bookRouter.post('/', async (req: Request, res: Response, next: NextFunction) => 
 
 }
 );
-bookRouter.patch('/:bookId', async (req: Request, res: Response, next: NextFunction) => {
+bookRouter.put('/:bookId', async (req: Request, res: Response, next: NextFunction) => {
     try {
 
         const id = req.params.bookId;
         const body = req.body;
-
+        if (body.copies !== undefined) {
+            body.available = body.copies > 0;
+        }
         const data = await Books.findByIdAndUpdate(id, body, { new: true, runValidators: true });
-        console.log(data);
         res.status(200).json({
             success: true,
             message: 'Book updated successfully',
@@ -88,7 +91,6 @@ bookRouter.delete('/:bookId', async (req: Request, res: Response, next: NextFunc
         res.status(200).json({
             success: true,
             message: 'Book deleted successfully',
-
             data: null
         });
     } catch (error) {

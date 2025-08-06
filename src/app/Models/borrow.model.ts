@@ -36,41 +36,36 @@ const borrowSchema = new Schema<IBorrow, BorrowStatic>({
   });
 
 borrowSchema.static('borrowBook', async function (bookId: string, quantity: number) {
-
   const book = await Books.findById(bookId);
 
   if (!book) {
     throw new Error('Book is not found');
   }
-  if(book.copies < 0){
+
+  if (book.copies < 0) {
     throw new Error('copies must be positive number');
   }
 
   if (book.copies === 0) {
-    book.available = false;
     throw new Error('Book is not available');
   }
 
   if (book.copies < quantity) {
     throw new Error('Not enough copies are available');
   }
-  if (quantity < 0) {
-    throw new Error('quantity should not be negative');
-  }
-  if(quantity ===0){
-    throw new Error('No book has been borrowed');
+
+  if (quantity <= 0) {
+    throw new Error('Quantity must be a positive number');
   }
 
-  book.copies = book.copies - quantity;
-
-  if (book.copies === 0) {
-    book.available = false;
-  }
+  book.copies -= quantity;
+  book.available = book.copies > 0;
 
   await book.save();
   return book;
-
 });
+
+
 
 export const BorrowBooks = mongoose.model<IBorrow, Model<IBorrow> & BorrowStatic>(
   'BorrowBooks',

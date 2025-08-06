@@ -38,7 +38,7 @@ borrowRouter.get('/', async (req: Request, res: Response, next: NextFunction) =>
         res.status(200).json({
             success: true,
             messaage: 'Borrowed books summary retrieved successfully',
-            data
+            data : data
         });
 
     } catch (error) {
