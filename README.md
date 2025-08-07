@@ -72,7 +72,7 @@ https://drive.google.com/file/d/18-gLPiMJcihS0V2P5-WTvkeP42q2j70Y/view?usp=shari
 ## Deployment Link
 
 ```
-https://library-management-app-sooty-mu.vercel.app/
+https://library-management-app-rust.vercel.app
 ```
 
 
